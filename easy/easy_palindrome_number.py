@@ -7,7 +7,7 @@ Given an integer x, return true if x is a palindrome, and false otherwise.
 
 Dificuldade: easy"""
 
-x = -121
+x = 121
 
 number_string = str(x)
 

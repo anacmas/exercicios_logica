@@ -11,7 +11,7 @@ such that n == 2^x.
 
 Dificuldade: easy"""
 
-n = 0
+n = 1
 
 def power_of_two(n):
 

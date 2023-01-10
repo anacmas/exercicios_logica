@@ -9,7 +9,7 @@ Note that you must do this in-place without making a copy of the array.
 
 Dificuldade: easy"""
 
-nums = [0]
+nums = [0,1,0,3,12]
 
 sum = 0
 
