@@ -3,6 +3,7 @@
 
 # Enunciado:
 # Given the head of a singly linked list, reverse the list, and return the reversed list.
+# Dificuldade: easy
 
 head = [1,2]
 
