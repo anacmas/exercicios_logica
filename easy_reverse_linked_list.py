@@ -1,9 +1,11 @@
-# Problema proposto por leetcode.com
-# Link do problema: https://leetcode.com/problems/reverse-linked-list/
+"""Problema proposto por leetcode.com
 
-# Enunciado:
-# Given the head of a singly linked list, reverse the list, and return the reversed list.
-# Dificuldade: easy
+Link do problema: https://leetcode.com/problems/reverse-linked-list/
+
+Enunciado:
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+Dificuldade: easy"""
 
 head = [1,2]
 

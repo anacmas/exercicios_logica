@@ -1,9 +1,11 @@
-# Problema proposto por leetcode.com
-# Link do problema: https://leetcode.com/problems/palindrome-number/
+"""Problema proposto por leetcode.com
 
-# Enunciado:
-# Given an integer x, return true if x is a palindrome, and false otherwise.
-# Dificuldade: easy
+Link do problema: https://leetcode.com/problems/palindrome-number/
+
+Enunciado:
+Given an integer x, return true if x is a palindrome, and false otherwise.
+
+Dificuldade: easy"""
 
 x = -121
 
