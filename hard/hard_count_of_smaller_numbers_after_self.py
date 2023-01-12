@@ -1,12 +1,12 @@
 """Problema proposto por leetcode.com
 
-// Link do problema: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+Link do problema: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 
-// Enunciado:
-// Given an integer array nums, return an integer array counts where 
-// counts[i] is the number of smaller elements to the right of nums[i].
+Enunciado:
+Given an integer array nums, return an integer array counts where 
+counts[i] is the number of smaller elements to the right of nums[i].
 
-// Dificuldade: hard"""
+Dificuldade: hard"""
 
 nums = [5,2,6,1]
 
