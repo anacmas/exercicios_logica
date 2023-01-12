@@ -7,7 +7,7 @@
 
 // Dificuldade: easy
 
-let x = -121;
+let x = 121;
 
 let numberString = x.toString();
 
