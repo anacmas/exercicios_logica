@@ -1,6 +1,6 @@
 """Problema proposto por leetcode.com
 
-// Link do problema: https://leetcode.com/problems/n-queens-ii/
+// Link do problema: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 
 // Enunciado:
 // Given an integer array nums, return an integer array counts where 
