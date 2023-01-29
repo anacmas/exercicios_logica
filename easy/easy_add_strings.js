@@ -20,7 +20,7 @@ function addStrings(n1, n2) {
   let n2_int = parseInt(n2);
   let sum = n1_int + n2_int;
 
-  return console.log(sum.toString());
+  return sum.toString();
 }
 
 addStrings(num1, num2);
