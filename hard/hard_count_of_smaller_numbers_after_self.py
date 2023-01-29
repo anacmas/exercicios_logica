@@ -8,21 +8,17 @@ counts[i] is the number of smaller elements to the right of nums[i].
 
 Dificuldade: hard"""
 
-nums = [5,2,6,1]
+class Solution(object):
+    def countSmaller(self, nums):
+        counted_numbers = []
 
-def count_smaller_numbers(numbers):
-    counted_numbers = []
+        for i in range(len(nums)):
+            sum = 0
 
-    for i in range(len(numbers)):
-        sum = 0
+            for j in range(i+1, len(nums)):
+                if nums[i] > nums[j]:
+                    sum += 1
 
-        for j in range(i+1, len(numbers)):
-            if numbers[i] > numbers[j]:
-                sum += 1
+            counted_numbers.append(sum)
 
-        counted_numbers.append(sum)
-
-    return print(counted_numbers)
-
-
-count_smaller_numbers(nums)
+        return counted_numbers

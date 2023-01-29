@@ -11,13 +11,9 @@ such that n == 2^x.
 
 Dificuldade: easy"""
 
-n = 1
-
-def power_of_two(n):
-
-    for x in range(0, 50):
-        if 2**x == n:
-            return print(True)
-    return print(False)
-
-power_of_two(n)
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        for x in range(0, 50):
+            if 2**x == n:
+                return True
+        return False

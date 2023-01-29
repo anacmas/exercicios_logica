@@ -9,19 +9,23 @@ Note that you must do this in-place without making a copy of the array.
 
 Dificuldade: easy"""
 
-nums = [0,1,0,3,12]
+ 
+class Solution(object):
+    def moveZeroes(self, nums):
+        sum = 0
 
-sum = 0
+        for number in nums:
+            if number == 0:
+                sum += 1
 
-for number in nums:
-    if number == 0:
-        sum += 1
+        temp_array = list(filter(lambda x: x != 0, nums))
 
-nums = list(filter(lambda x: x != 0, nums))
+        count = 0
+        while count < sum:
+            temp_array.append(0)
+            count += 1
+        
+        for n in range(len(nums)):
+            nums[n] = temp_array[n]
 
-count = 0
-while count < sum:
-    nums.append(0)
-    count += 1
-
-print(nums)
+        return nums

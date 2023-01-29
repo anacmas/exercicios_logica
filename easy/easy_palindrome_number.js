@@ -9,18 +9,22 @@
 
 let x = 121;
 
-let numberString = x.toString();
+function isPalindrome(x) {
+  let numberString = x.toString();
 
-let inverted = [];
+  let inverted = [];
 
-for (let i = 0; i < numberString.length; i++) {
-  inverted.unshift(numberString[i]);
+  for (let i = 0; i < numberString.length; i++) {
+    inverted.unshift(numberString[i]);
+  }
+
+  let invertedJoined = inverted.join("");
+
+  if (invertedJoined === numberString) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-let invertedJoined = inverted.join("");
-
-if (invertedJoined === numberString) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+isPalindrome(x);

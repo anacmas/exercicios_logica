@@ -12,25 +12,21 @@
 
 // Dificuldade: hard
 
-let nums = [3, 6, 9, 1];
-nums.sort;
-
-function calculateMaximumGap(numbersArray) {
-  if (numbersArray.length > 1) {
+var maximumGap = function (nums) {
+  nums.sort;
+  if (nums.length > 1) {
     i = 0;
-    let maximumDifference = numbersArray[i + 1] - numbersArray[i];
-    while (i < numbersArray.length - 1) {
-      if (numbersArray[i + 1] - numbersArray[i] > maximumDifference) {
-        maximumDifference = numbersArray[i + 1] - numbersArray[i];
+    let maximumDifference = nums[i + 1] - nums[i];
+    while (i < nums.length - 1) {
+      if (nums[i + 1] - nums[i] > maximumDifference) {
+        maximumDifference = nums[i + 1] - nums[i];
       }
       i++;
     }
 
-    return console.log(maximumDifference);
+    return maximumDifference;
   } else {
     maximumDifference = [0];
-    return console.log(maximumDifference);
+    return maximumDifference;
   }
-}
-
-calculateMaximumGap(nums);
+};

@@ -9,15 +9,16 @@ twice in the array, and return false if every element is distinct.
 Dificuldade: easy"""
 
 
-nums = [1, 2, 3, 1]
-sum = 0
+class Solution(object):
+    def containsDuplicate(self, nums):
+        sum = 0
 
-for i in range(len(nums)):
-    for j in range(i+1, len(nums)):
-        if nums[i] == nums[j]:
-            sum += 1
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] == nums[j]:
+                    sum += 1
 
-if sum > 0:
-    print(True)
-else:
-    print(False)
+        if sum > 0:
+            return True
+        else:
+            return False

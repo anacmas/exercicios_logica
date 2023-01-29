@@ -13,27 +13,22 @@ and uses only constant extra space.
 
 Dificuldade: medium"""
 
-nums = [1, 2, 1, 3, 2, 5]
+class Solution(object):
+    def singleNumber(self, nums):
+        repeated_array = []
+        array_without_repetition = []
+        repeated = set()
 
-def is_single(number_array):
+        for number in nums:
+            if number not in repeated_array:
+                repeated_array.append(number)
+            else: 
+                repeated.add(number)
 
-    repeated_array = []
-    array_without_repetition = []
-    repeated = set()
-
-    for number in number_array:
-        if number not in repeated_array:
-            repeated_array.append(number)
-        else: 
-            repeated.add(number)
-
-    for item in number_array:
-        if item not in repeated:
-            array_without_repetition.append(item)
+        for item in nums:
+            if item not in repeated:
+                array_without_repetition.append(item)
 
 
 
-    return print(array_without_repetition)
-
-
-is_single(nums)
+        return array_without_repetition
