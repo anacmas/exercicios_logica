@@ -8,11 +8,17 @@
 
 // Dificuldade: easy
 
-let head = [1, 2, 3, 4, 5];
-let inverted = [];
+var reverseList = function (head) {
+  let regular = head;
+  let inverse = null;
+  let next;
 
-for (let i = 0; i < head.length; i++) {
-  inverted.unshift(head[i]);
-}
+  while (regular != null) {
+    next = regular.next;
+    regular.next = inverse;
+    inverse = regular;
+    regular = next;
+  }
 
-console.log(inverted);
+  return inverse;
+};

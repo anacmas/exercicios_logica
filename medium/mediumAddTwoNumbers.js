@@ -13,21 +13,20 @@
 
 // Dificuldade: medium
 
-let reversedNumber1 = [2, 4, 3];
-let reversedNumber2 = [5, 6, 4];
+var addTwoNumbers = function (l1, l2) {
+  var head = new ListNode(0);
+  var count = 0;
+  var sum = 0;
+  var node = head;
 
-function addTwoNumbers(reversedNumber1, reversedNumber2) {
-  let correctNumber1 = parseInt(reversedNumber1.reverse().join(""));
-  let correctNumber2 = parseInt(reversedNumber2.reverse().join(""));
-
-  let sum = (correctNumber1 + correctNumber2).toString();
-
-  resultList = [];
-  for (let i = 0; i < sum.length; i++) {
-    resultList.push(parseInt(sum[i]));
+  while ((l1 || l2) !== null) {
+    sum = (l1 ? l1.val : 0) + (l2 ? l2.val : 0) + count;
+    count = Math.floor(sum / 10);
+    node.next = new ListNode(sum % 10);
+    node = node.next;
+    l1 = l1 ? l1.next : null;
+    l2 = l2 ? l2.next : null;
   }
-
-  console.log(resultList.reverse());
-}
-
-addTwoNumbers(reversedNumber1, reversedNumber2);
+  if (count) node.next = new ListNode(count);
+  return head.next;
+};
